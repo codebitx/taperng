@@ -1,0 +1,22 @@
+{
+  "en": {
+    "name": "Annual Party Lottery",
+    "participants": 100,
+    "prizes": [
+      { "name": "50 CNY Red Packet", "quantity": 3 },
+      { "name": "100 CNY Red Packet", "quantity": 2 },
+      { "name": "Xiaomi Laptop", "quantity": 1 },
+      { "name": "iPhone 17", "quantity": 1 }
+    ]
+  },
+  "zh": {
+    "name": "年会抽奖",
+    "participants": 100,
+    "prizes": [
+      { "name": "50 元红包", "quantity": 3 },
+      { "name": "100 元红包", "quantity": 2 },
+      { "name": "小米笔记本", "quantity": 1 },
+      { "name": "iPhone 17", "quantity": 1 }
+    ]
+  }
+}

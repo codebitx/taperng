@@ -1,0 +1,41 @@
+{
+  "beaconRandomness": "0x024097c3aa01f005820b9412ddac72f7f2e7b1a087765492b5466b1ea9f49ffa",
+  "beaconRound": 123,
+  "blockHash": "0xac8567b71656994940a248970ec7290a4b476e212878eb133e1881aa8d876e69",
+  "chainId": 196,
+  "circuitInput": "0x99fc39",
+  "circuitMix": "0x5e49489b3425994bcecaf8ccf6cf6059c07e862dde75b526cd997af9176ee207",
+  "commitment": "0xe857af1f6c11ebf2ff0aff4656c342ba20e653f46b72c3b125494b7f3ae5a28a",
+  "contextHash": "0x8400581f9fb0e9ff47e3b838cc206918122c53cb0a65a01db610f85a6f76e9e5",
+  "cpu": "0xd5bc8e63950AA26f0A633D1d9851a20Feacac5Bb",
+  "finalSeed": "0xc42dafaa6787570df55283b3901005a67a29e44ba6782313751fe47eec6c6dcd",
+  "lottery": "0x1000000000000000000000000000000000000001",
+  "netlistHash": "0x998f29f1ad8dfab25871559ff695af7e6e7d0580cd73e6f1b07edeb10830600b",
+  "organizer": "0x2000000000000000000000000000000000000002",
+  "organizerSeed": "0x98a654a930571d66e57c81afb115938eca01f5aef81feeb720db8fe8d5d85477",
+  "participantCount": 100,
+  "participantsRoot": "0x5b20a9f6d7930c7eee812bee043e28b2b5d0dfaae156ef074bd2ffd956c5fa6e",
+  "preSeed": "0xdfd4a7b21ccb69519fdff21f5e4d88b5e8df69ada8f1ce0e7faa88f3d26524ce",
+  "prizeSlots": [
+    5,
+    3,
+    4,
+    6,
+    2,
+    1,
+    0
+  ],
+  "prizeSpecHash": "0x9687d29ddad1e35ecf4b4190eb13ebacc7c40caeaa56c64d6876a32872fcba60",
+  "specHash": "0x113acf18300a618410477e3374e9da6fcc7041fd67b7e928d10f23ca286a1a0c",
+  "tapeRng": "0x3000000000000000000000000000000000000003",
+  "winnerCount": 7,
+  "winners": [
+    78,
+    37,
+    70,
+    61,
+    56,
+    41,
+    34
+  ]
+}

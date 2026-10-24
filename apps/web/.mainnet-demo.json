@@ -1,0 +1,47 @@
+{
+  "A": {
+    "name": "年会抽奖",
+    "participantCount": 20,
+    "prizeSpecHash": "0x55bb44d06ed9f03162fcca765b7864a5ce49b87761f1d03948bb9662c65bdf6e",
+    "specHash": "0x87229a6c4d98f47ff8bf2fa7ff14559d461b622b76376b08679a86df818a8575",
+    "winnerCount": 6,
+    "seed": "0xde98e683b076916ef99b4e4f1580f9051ec3e4a715b2f4bdd3d431979a9946bf",
+    "drawId": "0",
+    "requestId": "1",
+    "revealBlock": "73717272",
+    "beaconRound": "33227642",
+    "beaconTime": 1792486293,
+    "createTx": "0x267ec59019868d2a210de7337c255a7b070e6765d3184c3a49fcfeb4a8ed9423",
+    "finalizeTx": "0x6787d51a778ba73fcb515275e66e6caafd00381d9a4fe5b0d9db8221e5d52293"
+  },
+  "B": {
+    "name": "团队下午茶抽奖",
+    "participantCount": 8,
+    "prizeSpecHash": "0x5f45fdea2038b9cdd8c67016beb28c47bbcb49c60e88d319e1bfb945e34686bd",
+    "specHash": "0xe488a234aeedda9ce002fd3931b54ac4468b4c90dd0abcfa8bc7deefb742d2d9",
+    "winnerCount": 3,
+    "seed": "0xcb5b19b05b438b84ddaf0c0ee1f492ade0609bc531a51548a3ee6f3bd206999f",
+    "drawId": "1",
+    "requestId": "2",
+    "revealBlock": "73717782",
+    "beaconRound": "33227812",
+    "beaconTime": 1792486803,
+    "createTx": "0x9c749ca4451e60e1d1aee086faad7ceaf47ed6dffb55db82ee415b0ca7f0468e",
+    "finalizeTx": "0x64dd32ea062a4a734ba638e1bc3a54c3820da9b035c7a27231e66e28b2a410a0"
+  },
+  "C": {
+    "name": "产品发布抽奖",
+    "participantCount": 25,
+    "prizeSpecHash": "0x2cf430450c3791d452fd6f3d8657fbfe3fce292a9eb62f0745f2992d853b805b",
+    "specHash": "0x15e866603696515128609181bb9b3f3df3c1379494664afd3ebdf950ded31297",
+    "winnerCount": 4,
+    "seed": "0x02323bbbeb344b1c475c8186d0daeea28f31a3c1a04622d4ee8f822405055cdd",
+    "drawId": "2",
+    "requestId": "3",
+    "revealBlock": "73719304",
+    "beaconRound": "33228321",
+    "beaconTime": 1792488330,
+    "createTx": "0xd59a0d8bf2e31c59936eeceedf428e2c1ad1da3a522c9a136985ade90f9539b1",
+    "finalizeTx": "0x2ad180829997b83ac927a492829d4898c7651cb7380429cf59bd903efa123b7b"
+  }
+}

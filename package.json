@@ -1,0 +1,15 @@
+{
+  "name": "taperng",
+  "private": true,
+  "packageManager": "pnpm@11.20.0",
+  "scripts": {
+    "contracts:build": "cd contracts && forge build",
+    "contracts:test": "cd contracts && forge test",
+    "contracts:test:fork": "cd contracts && RUN_FORK=true forge test --match-path 'test/fork/*'",
+    "contracts:test:bls": "cd contracts && RUN_EIP2537=true forge test --match-path test/unit/DrandQuicknetAdapter.t.sol --evm-version osaka",
+    "sdk:test": "pnpm --filter taperng-sdk test",
+    "web:dev": "pnpm --filter web dev",
+    "web:build": "pnpm --filter web build",
+    "e2e": "pnpm --filter web exec playwright test"
+  }
+}

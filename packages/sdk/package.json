@@ -1,0 +1,55 @@
+{
+  "name": "taperng-sdk",
+  "version": "0.1.0",
+  "description": "Verifiable randomness on X Layer, driven by a TapeOut circuit. A request-centered TypeScript SDK for the TapeRNG on-chain randomness primitive.",
+  "keywords": [
+    "taperng",
+    "tapeout",
+    "xlayer",
+    "randomness",
+    "drand",
+    "verifiable-randomness"
+  ],
+  "license": "Apache-2.0",
+  "private": false,
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "cli": "tsx src/cli.ts"
+  },
+  "dependencies": {
+    "@noble/curves": "^2.0.1",
+    "@noble/hashes": "^2.0.1",
+    "commander": "^14.0.1",
+    "zod": "^4.1.12"
+  },
+  "peerDependencies": {
+    "viem": "^2.38.5"
+  },
+  "peerDependenciesMeta": {
+    "viem": {
+      "optional": false
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^24.9.1",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3",
+    "viem": "^2.38.5",
+    "vitest": "^3.2.4"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  }
+}
