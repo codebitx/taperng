@@ -161,6 +161,42 @@ The script writes `contracts/deployments/<chainId>.json` and logs the addresses.
 
 > Do not put a private key in the repository or in chat. Use `cast wallet import taperng-deployer --interactive` with a dedicated deployer wallet.
 
+## Mainnet addresses (X Layer chain 196)
+
+Production deployment: **https://tape.futool.com**. Pinned in `config/addresses.json`; for TapeRNG-on-X Layer development you can query them on-chain (`cast call`):
+
+| Contract | Address |
+|---|---|
+| `TapeRNG` (protocol) | `0x3fadc14280A850dd31De8c7A83172Ded8BE717Ce` |
+| `LotteryDemo` (metadata-only draw demo) | `0xb76AE4c893982E4D25ADC4888c8784369Fbd578D` |
+| `DrandQuicknetAdapter` (drand beacon) | `0xa9c170404CaAa16BEff7bBc2AF8c2d0D428d7289` |
+
+### TapeOut circuit — Keccak-256 IP Core
+
+`TapeRNG` mixes entropy through this circuit. Every request pins the CPU
+address / circuit ID / netlist hash on-chain (verified via
+`TapeRNG.getRequest`, e.g. request `1`), so a proof can replay the same netlist
+off-chain. `nIn = 24` bytes of pre-image go in; `nOut = 24` bytes come out.
+
+| Item | Value |
+|---|---|
+| Processor factory | `0x1f09DAeFA827f02CBb40967cc91b259763760761` |
+| FAB-Genisis (fab template) | `0x87bfca3494aa228ff589ab9b642143a5e8c8f9a6` |
+| **CPU / Keccak core circuit address** | `0xd5bc8e63950AA26f0A633D1d9851a20Feacac5Bb` |
+| circuitId | `3` |
+| netlist hash | `0x998f29f1ad8dfab25871559ff695af7e6e7d0580cd73e6f1b07edeb10830600b` |
+| netlist bytes | `10416` |
+| nIn / nOut | `24` / `24` |
+| gateCount | `1488` |
+
+Read directly from the protocol:
+
+```bash
+export RPC=https://rpc.xlayer.tech
+cast call 0x3fadc14280A850dd31De8c7A83172Ded8BE717Ce \
+  "getRequest(uint256)((address,address,bytes32,bytes32,bytes32,uint64,uint64,address,uint256,bytes32,uint32,uint32,uint32,bool,bool,bool,bool,bytes32,bytes32,bytes32,bytes32,bytes32,bytes32,uint8))" 1 --rpc-url $RPC
+```
+
 ## How the randomness is derived
 
 ```text

@@ -159,6 +159,42 @@ forge script script/Deploy.s.sol:Deploy \
 > 不要把私钥放进仓库或聊天记录。使用专用部署钱包，并执行
 > `cast wallet import taperng-deployer --interactive`。
 
+## 主网合约地址（X Layer 196）
+
+生产部署：**https://tape.futool.com**。已固化于 `config/addresses.json`，X Layer
+上开发可用 `cast call` 直接读取：
+
+| 合约 | 地址 |
+|---|---|
+| `TapeRNG`（协议） | `0x3fadc14280A850dd31De8c7A83172Ded8BE717Ce` |
+| `LotteryDemo`（metadata-only 抽奖 demo） | `0xb76AE4c893982E4D25ADC4888c8784369Fbd578D` |
+| `DrandQuicknetAdapter`（drand 信标） | `0xa9c170404CaAa16BEff7bBc2AF8c2d0D428d7289` |
+
+### TapeOut 电路 —— Keccak-256 IP Core
+
+`TapeRNG` 用该电路混合熵源。每次请求都把 CPU 地址 / circuit ID / 网表哈希
+固化在链上（可用 `TapeRNG.getRequest` 核验，例如 request `1`），使 proof 能
+在链下回放同一份网表。输入 `nIn = 24` 字节预像，输出 `nOut = 24` 字节。
+
+| 项目 | 值 |
+|---|---|
+| 处理器工厂 | `0x1f09DAeFA827f02CBb40967cc91b259763760761` |
+| FAB-Genisis（fab 模板） | `0x87bfca3494aa228ff589ab9b642143a5e8c8f9a6` |
+| **CPU / Keccak core 电路地址** | `0xd5bc8e63950AA26f0A633D1d9851a20Feacac5Bb` |
+| circuitId | `3` |
+| 网表哈希 | `0x998f29f1ad8dfab25871559ff695af7e6e7d0580cd73e6f1b07edeb10830600b` |
+| 网表字节数 | `10416` |
+| nIn / nOut | `24` / `24` |
+| gateCount | `1488` |
+
+直接从协议读取：
+
+```bash
+export RPC=https://rpc.xlayer.tech
+cast call 0x3fadc14280A850dd31De8c7A83172Ded8BE717Ce \
+  "getRequest(uint256)((address,address,bytes32,bytes32,bytes32,uint64,uint64,address,uint256,bytes32,uint32,uint32,uint32,bool,bool,bool,bool,bytes32,bytes32,bytes32,bytes32,bytes32,bytes32,uint8))" 1 --rpc-url $RPC
+```
+
 ## 随机数如何派生
 
 ```text
