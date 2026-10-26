@@ -165,11 +165,13 @@ The script writes `contracts/deployments/<chainId>.json` and logs the addresses.
 
 Production deployment: **https://tape.futool.com**. Pinned in `config/addresses.json`; for TapeRNG-on-X Layer development you can query them on-chain (`cast call`):
 
-| Contract | Address |
+| Contract | Address (click to open OKLink in a new tab) |
 |---|---|
-| `TapeRNG` (protocol) | `0x3fadc14280A850dd31De8c7A83172Ded8BE717Ce` |
-| `LotteryDemo` (metadata-only draw demo) | `0xb76AE4c893982E4D25ADC4888c8784369Fbd578D` |
-| `DrandQuicknetAdapter` (drand beacon) | `0xa9c170404CaAa16BEff7bBc2AF8c2d0D428d7289` |
+| `TapeRNG` (protocol) | <a href="https://www.okx.com/web3/explorer/xlayer/address/0x3fadc14280A850dd31De8c7A83172Ded8BE717Ce" target="_blank" rel="noopener">`0x3fadc14280A850dd31De8c7A83172Ded8BE717Ce`</a> |
+| `LotteryDemo` (metadata-only draw demo) | <a href="https://www.okx.com/web3/explorer/xlayer/address/0xb76AE4c893982E4D25ADC4888c8784369Fbd578D" target="_blank" rel="noopener">`0xb76AE4c893982E4D25ADC4888c8784369Fbd578D`</a> |
+| `DrandQuicknetAdapter` (drand beacon) | <a href="https://www.okx.com/web3/explorer/xlayer/address/0xa9c170404CaAa16BEff7bBc2AF8c2d0D428d7289" target="_blank" rel="noopener">`0xa9c170404CaAa16BEff7bBc2AF8c2d0D428d7289`</a> |
+
+Uniform browser prefix: `https://www.okx.com/web3/explorer/xlayer/address/<address>` (same as the frontend).
 
 ### TapeOut circuit — Keccak-256 IP Core
 
@@ -180,9 +182,9 @@ off-chain. `nIn = 24` bytes of pre-image go in; `nOut = 24` bytes come out.
 
 | Item | Value |
 |---|---|
-| Processor factory | `0x1f09DAeFA827f02CBb40967cc91b259763760761` |
-| FAB-Genisis (fab template) | `0x87bfca3494aa228ff589ab9b642143a5e8c8f9a6` |
-| **CPU / Keccak core circuit address** | `0xd5bc8e63950AA26f0A633D1d9851a20Feacac5Bb` |
+| Processor factory | <a href="https://www.okx.com/web3/explorer/xlayer/address/0x1f09DAeFA827f02CBb40967cc91b259763760761" target="_blank" rel="noopener">`0x1f09DAeFA827f02CBb40967cc91b259763760761`</a> |
+| FAB-Genisis (fab template) | <a href="https://www.okx.com/web3/explorer/xlayer/address/0x87bfca3494aa228ff589ab9b642143a5e8c8f9a6" target="_blank" rel="noopener">`0x87bfca3494aa228ff589ab9b642143a5e8c8f9a6`</a> |
+| **CPU / Keccak core circuit address** | <a href="https://www.okx.com/web3/explorer/xlayer/address/0xd5bc8e63950AA26f0A633D1d9851a20Feacac5Bb" target="_blank" rel="noopener">`0xd5bc8e63950AA26f0A633D1d9851a20Feacac5Bb`</a> |
 | circuitId | `3` |
 | netlist hash | `0x998f29f1ad8dfab25871559ff695af7e6e7d0580cd73e6f1b07edeb10830600b` |
 | netlist bytes | `10416` |

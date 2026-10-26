@@ -164,11 +164,13 @@ forge script script/Deploy.s.sol:Deploy \
 生产部署：**https://tape.futool.com**。已固化于 `config/addresses.json`，X Layer
 上开发可用 `cast call` 直接读取：
 
-| 合约 | 地址 |
+| 合约 | 地址（点击在新标签打开 OKLink） |
 |---|---|
-| `TapeRNG`（协议） | `0x3fadc14280A850dd31De8c7A83172Ded8BE717Ce` |
-| `LotteryDemo`（metadata-only 抽奖 demo） | `0xb76AE4c893982E4D25ADC4888c8784369Fbd578D` |
-| `DrandQuicknetAdapter`（drand 信标） | `0xa9c170404CaAa16BEff7bBc2AF8c2d0D428d7289` |
+| `TapeRNG`（协议） | <a href="https://www.okx.com/web3/explorer/xlayer/address/0x3fadc14280A850dd31De8c7A83172Ded8BE717Ce" target="_blank" rel="noopener">`0x3fadc14280A850dd31De8c7A83172Ded8BE717Ce`</a> |
+| `LotteryDemo`（metadata-only 抽奖 demo） | <a href="https://www.okx.com/web3/explorer/xlayer/address/0xb76AE4c893982E4D25ADC4888c8784369Fbd578D" target="_blank" rel="noopener">`0xb76AE4c893982E4D25ADC4888c8784369Fbd578D`</a> |
+| `DrandQuicknetAdapter`（drand 信标） | <a href="https://www.okx.com/web3/explorer/xlayer/address/0xa9c170404CaAa16BEff7bBc2AF8c2d0D428d7289" target="_blank" rel="noopener">`0xa9c170404CaAa16BEff7bBc2AF8c2d0D428d7289`</a> |
+
+浏览器地址统一前缀：`https://www.okx.com/web3/explorer/xlayer/address/<address>`（与前端一致，点击地址即新标签直达）。
 
 ### TapeOut 电路 —— Keccak-256 IP Core
 
@@ -178,9 +180,9 @@ forge script script/Deploy.s.sol:Deploy \
 
 | 项目 | 值 |
 |---|---|
-| 处理器工厂 | `0x1f09DAeFA827f02CBb40967cc91b259763760761` |
-| FAB-Genisis（fab 模板） | `0x87bfca3494aa228ff589ab9b642143a5e8c8f9a6` |
-| **CPU / Keccak core 电路地址** | `0xd5bc8e63950AA26f0A633D1d9851a20Feacac5Bb` |
+| 处理器工厂 | <a href="https://www.okx.com/web3/explorer/xlayer/address/0x1f09DAeFA827f02CBb40967cc91b259763760761" target="_blank" rel="noopener">`0x1f09DAeFA827f02CBb40967cc91b259763760761`</a> |
+| FAB-Genisis（fab 模板） | <a href="https://www.okx.com/web3/explorer/xlayer/address/0x87bfca3494aa228ff589ab9b642143a5e8c8f9a6" target="_blank" rel="noopener">`0x87bfca3494aa228ff589ab9b642143a5e8c8f9a6`</a> |
+| **CPU / Keccak core 电路地址** | <a href="https://www.okx.com/web3/explorer/xlayer/address/0xd5bc8e63950AA26f0A633D1d9851a20Feacac5Bb" target="_blank" rel="noopener">`0xd5bc8e63950AA26f0A633D1d9851a20Feacac5Bb`</a> |
 | circuitId | `3` |
 | 网表哈希 | `0x998f29f1ad8dfab25871559ff695af7e6e7d0580cd73e6f1b07edeb10830600b` |
 | 网表字节数 | `10416` |
