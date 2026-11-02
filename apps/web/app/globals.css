@@ -73,13 +73,9 @@ button {
 .brand-mark {
   width: 42px;
   height: 42px;
-  display: grid;
-  place-items: center;
-  border-radius: 12px;
-  background: linear-gradient(135deg, var(--accent), var(--accent-2));
-  color: #04131c;
-  font-weight: 900;
-  letter-spacing: -1px;
+  flex: 0 0 auto;
+  display: block;
+  border-radius: 22%;
 }
 
 .brand strong {

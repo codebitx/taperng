@@ -13,7 +13,13 @@ export function Header() {
   return (
     <header className="site-header">
       <Link href="/" className="brand">
-        <span className="brand-mark">TR</span>
+        <img
+          className="brand-mark"
+          src="/brand/logo-taperng-256.png"
+          alt=""
+          width={42}
+          height={42}
+        />
         <span>
           <strong>{t("appName")}</strong>
           <small>{t("tagline")}</small>
